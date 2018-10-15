@@ -1,0 +1,95 @@
+ <head>
+ <style>
+ .wrap{
+  position:relative;
+  width:300px;
+  height:225px;
+}
+ 
+.wall{
+  position:absolute;
+  width:800px;
+}
+ 
+.door{
+    position: absolute;
+    height: 340px;
+    width: auto;
+    top: 55%;
+    margin-top: -50px;
+    right: 55px;
+}
+
+.socket {
+	position: absolute;
+    height: 150px;
+    width: auto;
+    top: 102%;
+    left: 240px;
+}
+
+.plinth {
+	position: absolute;
+    height: 62px;
+    width: auto;
+    top: 170%;
+    left: 0px;
+}
+
+</style>
+ 
+<script>
+function preLoad() {
+  a1 = new Image; a1.src = 'images/wall-wall-painting-almond_2560.jpg';  
+  a2 = new Image; a2.src = 'images/wall-wall-painting-ash_2560.jpg';
+  a3 = new Image; a3.src = 'images/wall-wall-painting-blue_2560.jpg';
+  a4 = new Image; a4.src = 'images/wall-wall-painting-grey_2560.jpg';
+  a5 = new Image; a5.src = 'images/wall-wall-painting-white_2560.jpg';
+
+  b1 = new Image; b1.src = 'images/doors-basic_2560.png';  
+  b2 = new Image; b2.src = 'images/doors-classic-white_2560.png';
+  b3 = new Image; b3.src = 'images/doors-modern-white_2560.png';
+  
+  c1 = new Image; c1.src = 'images/sockets-berker_2560.png';
+  c2 = new Image; c2.src = 'images/sockets-bironi_2560.png';  
+  c3 = new Image; c3.src = 'images/sockets-legrand-quteo_2560.png';  
+  c4 = new Image; c4.src = 'images/sockets-legrand-valena_2560.png';    
+}
+function im(image) {
+  document.getElementById(image[0]).src = eval(image + ".src");
+}
+</script>
+
+</head>    
+
+<body onLoad="preLoad()">
+
+<form autocomplete="off">
+  <input type="radio" name="1" onClick="im('b1');" checked>Door basic
+  <input type="radio" name="1" onClick="im('b2');">Door classic
+  <input type="radio" name="1" onClick="im('b3');">Door modern
+</form>
+
+<form autocomplete="off">
+  <input type="radio" name="1" onClick="im('a1');" checked>Wall almond
+  <input type="radio" name="1" onClick="im('a2');">Wall ash
+  <input type="radio" name="1" onClick="im('a3');">Wall blue
+  <input type="radio" name="1" onClick="im('a4');">Wall grey
+  <input type="radio" name="1" onClick="im('a5');">Wall white
+</form>
+
+<form autocomplete="off">
+  <input type="radio" name="1" onClick="im('c1');" checked>Socket berker
+  <input type="radio" name="1" onClick="im('c2');">Socket bironi
+  <input type="radio" name="1" onClick="im('c3');">Socket legrand quteo
+  <input type="radio" name="1" onClick="im('c4');">Socket legrand valena
+</form>
+
+ <div class="wrap">
+  <img id ="a"class="wall" src="images/wall-wall-painting-almond_2560.jpg" alt="">
+  <img id="b" class = "door" src="images/doors-basic_2560.png" alt="">
+  <img id ="c" class = "socket" src="images/sockets-berker_2560.png" alt="">
+  <img id ="d" class = "plinth" src="images/plinth-classic-dark_2560.png" alt="">
+</div>
+</body>
+ 
