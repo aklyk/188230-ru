@@ -1,0 +1,222 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+
+ */
+
+ /* gallery */
+
+ @keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+
+ /* gallery end */
+
+ #slider {
+  margin-top: 2rem;
+ }
+
+.row {
+  margin-bottom: 50px;
+}
+
+ .parallax-container .parallax img {
+   opacity: 1;
+ }
+
+ .video-background {
+  width: 100%;
+}
+
+.collection {
+  text-align: left;
+}
+
+.gmaps {
+  width: 100%;
+  border: none;
+  height: 20rem;
+  margin-top: 1rem;
+  pointer-events:none;
+ }
+
+/* http://materialuicolors.co */
+
+ .btn-large {
+  margin-top: 1.5rem;
+  background-color: #607D8B;
+ }
+
+ .btn-large:hover {
+  margin-top: 1.5rem;
+  background-color: #9E9E9E;
+ }
+
+ .row .col.s12 h3, h4 {
+  color: black;
+ }
+
+ .row .col.s12 h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 0 0 0.912rem 0;
+ }
+
+ .row .col.s12 h3 {
+   font-weight: bold;
+   margin: 1.9466666667rem 0 0.5rem 0;
+ }
+
+ .parallax-container .section {
+   margin-top: 2.8rem;
+   width: 100%;
+ }
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  background-color: #607D8B;
+  color: #FFFFFF;
+}
+
+.collapsible a {
+  text-decoration: none;
+  color: #000;
+}
+
+.white {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 1rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 25%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+
+@media only screen and (max-width : 1024px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 25%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .video-background {
+    height: 100%;
+    width: auto;
+  }
+
+  .galleryFrame {
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .row .col.s12 h3 {
+    margin: -1rem 0 0.5rem 0;
+    font-size: 2.4em;
+  }
+
+  h4.helloBlockText {
+    margin: 1.5rem 0 1.5rem 0 !important;
+    font-size: 1.8em !important;
+  }
+
+  .helloBlock {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width : 420px) {
+  .row .col.s12 h3 {
+    margin: -1rem 0 0.5rem 0;
+  }
+
+  .row .col.s12 h4 {
+    margin: 1.8rem 0 0.912rem 0;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 20%;
+  }
+
+  .helloBlock {
+    margin-top: 0.5rem;
+  }
+
+  .helloBlock:hover {
+    margin-top: 0.5rem;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
