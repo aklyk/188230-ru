@@ -215,6 +215,7 @@ p {
 }
 .icon-block .material-icons {
   font-size: inherit;
+  color: #444;
 }
 
 footer.page-footer {
