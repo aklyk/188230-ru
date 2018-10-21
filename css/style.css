@@ -58,9 +58,8 @@
 .gmaps {
   width: 100%;
   border: none;
-  height: 20rem;
+  height: 30rem;
   margin-top: 1rem;
-  pointer-events:none;
  }
 
 /* http://materialuicolors.co */
@@ -232,4 +231,5 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #607D8B;
 }
