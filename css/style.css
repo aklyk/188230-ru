@@ -7,6 +7,14 @@
 
  */
  
+h5.center {
+	font-weight: 700;
+}
+
+p.light {
+	font-weight: 500;
+}
+ 
 .h1pagetitle {
    font-weight: bold;
    margin: 1.9466666667rem 0 0.5rem 0;
