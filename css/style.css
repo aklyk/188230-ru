@@ -7,7 +7,7 @@
 #go-top {
   position: fixed; 
   font-family: sans-serif;
-  line-height: 30px;
+  line-height: 42px; /** 30 **/
   text-align: center;
   color: #fff;
   bottom: 25px; 
